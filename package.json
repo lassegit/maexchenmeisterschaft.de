@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "maexchenmeisterschaft.de",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Web site für die Mäxchenmeisterschaft",
+  "version": "1.0.0",
+  "author": "Lasse T. <lassetange@gmail.com>",
   "dependencies": {
     "gatsby": "^2.9.4",
     "gatsby-image": "^2.1.4",
@@ -19,19 +19,41 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-codebox": "^2.0.2",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "husky": "^2.4.1",
+    "lint-staged": "^8.2.1",
     "prettier": "^1.18.2"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
+  "keywords": [],
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
+    "dev": "gatsby develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "lint": "yarn lint:js",
+    "lint:fix": "./node_modules/eslint/bin/eslint.js . --fix --cache",
+    "lint:js": "./node_modules/eslint/bin/eslint.js . --cache",
+    "prepush": "yarn lint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "./node_modules/eslint/bin/eslint.js . --fix --cache",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
