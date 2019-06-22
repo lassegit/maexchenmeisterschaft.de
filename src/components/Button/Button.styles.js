@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
 export const ButtonSt = styled.button`
-  background: aliceblue;
+  background: ${props => props.theme.primary};
 `;

@@ -6,6 +6,7 @@
   "author": "Lasse T. <lassetange@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "babel-plugin-styled-components": "^1.10.1",
     "gatsby": "^2.9.4",
     "gatsby-image": "^2.1.4",
     "gatsby-plugin-manifest": "^2.1.1",
@@ -23,12 +24,12 @@
   },
   "devDependencies": {
     "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-info": "^5.1.9",
     "@storybook/addon-links": "^5.1.9",
     "@storybook/addon-notes": "^5.1.9",
     "@storybook/addons": "^5.1.9",
     "@storybook/react": "^5.1.9",
     "babel-eslint": "^10.0.1",
-    "babel-plugin-styled-components": "^1.10.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^5.0.0",
@@ -52,7 +53,7 @@
     "lint:fix": "./node_modules/eslint/bin/eslint.js . --fix --cache",
     "lint:js": "./node_modules/eslint/bin/eslint.js . --cache",
     "prepush": "yarn lint",
-    "storybook": "start-storybook -p 6006 -c .storybook"
+    "storybook": "start-storybook -p 6006 -s ./src/assets"
   },
   "husky": {
     "hooks": {
