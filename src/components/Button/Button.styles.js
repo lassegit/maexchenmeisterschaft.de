@@ -39,3 +39,7 @@ export const ButtonSt = styled.button`
     pointer-events: none;
   }
 `;
+
+export const UnstyledButtonSt = styled.button`
+  all: unset;
+`;
