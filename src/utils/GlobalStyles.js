@@ -2,8 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
   @font-face {
-    font-family: 'PT Sans', sans-serif;
-    @import url('https://fonts.googleapis.com/css?family=Aguafina+Script&display=swap');
+    font-family: 'Source Sans Pro', sans-serif;
+    @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,900&display=swap');
   }
 
   html {
@@ -28,10 +28,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     margin: 0;
-  }
-
-  body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
   }
 
   hr {
