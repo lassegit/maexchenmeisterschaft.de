@@ -1,13 +1,15 @@
 const theme = {
-  primary: '#212931',
-  secondary: '#738698',
-  complementary: '#4B4031',
-  highlight: '#18bfef',
-  black: '#000',
-  white: '#fff',
-  gray: '#909498',
-  grayLight: '#c8cacc',
-  grayLightest: '#f6f6f6',
+  color: {
+    primary: '#212931',
+    secondary: '#738698',
+    complementary: '#4B4031',
+    highlight: '#18bfef',
+    black: '#000',
+    white: '#fff',
+    gray: '#909498',
+    grayLight: '#c8cacc',
+    grayLightest: '#f6f6f6',
+  },
   fontSize: {
     8: '0.5rem',
     9: '0.5625rem',
@@ -17,7 +19,7 @@ const theme = {
     13: '0.8125rem',
     14: '0.875rem',
     15: '0.9375rem',
-    16: '1rem (base)',
+    16: '1rem',
     18: '1.125rem',
     20: '1.25rem',
     22: '1.375rem',
@@ -30,6 +32,13 @@ const theme = {
     36: '2.25rem',
     38: '2.375rem',
     40: '2.5rem',
+  },
+  fontWeight: {
+    regular: 400,
+    black: 900,
+  },
+  lineHeight: {
+    normal: 1.75,
   },
 };
 

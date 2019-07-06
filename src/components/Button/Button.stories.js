@@ -4,31 +4,30 @@ import { storiesOf } from '@storybook/react';
 import Button from './Button';
 
 const handleClick = () => action('Button clicked');
-const text = 'This is a button';
 
 storiesOf('Button', module)
   .add('default', () => (
     <Button onClick={handleClick} variant="primary">
-      {text}
+      This is a button
     </Button>
   ))
   .add('secondary', () => (
     <Button onClick={handleClick} variant="secondary">
-      {text}
+      This is a button
     </Button>
   ))
   .add('disabled', () => (
     <Button onClick={handleClick} disabled>
-      {text}
+      This is a button
     </Button>
   ))
   .add('unstyled', () => (
     <Button onClick={handleClick} unstyled>
-      {text}
+      This is a button
     </Button>
   ))
   .add('loading', () => (
     <Button onClick={handleClick} isLoading>
-      {text}
+      This is a button
     </Button>
   ));

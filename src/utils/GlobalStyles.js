@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
   @font-face {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
     @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,900&display=swap');
   }
 
@@ -22,13 +22,14 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
-    line-height: 1.15; 
     -webkit-text-size-adjust: 100%; 
   }
 
   body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    line-height: ${({ theme }) => theme.lineHeight.normal};
   }
 
   hr {
@@ -41,7 +42,7 @@ const GlobalStyles = createGlobalStyle`
 
   b,
   strong {
-    font-weight: bolder;
+    font-weight: 900;
   }
 
   code,
@@ -49,7 +50,7 @@ const GlobalStyles = createGlobalStyle`
   samp,
   pre {
     font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace; 
-    font-size: 1em; 
+    font-size: 1rem; 
   }
 
   small {
@@ -71,7 +72,6 @@ const GlobalStyles = createGlobalStyle`
   sup {
     top: -0.5em;
   }
-
 
   button,
   input,

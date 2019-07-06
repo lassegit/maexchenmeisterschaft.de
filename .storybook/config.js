@@ -17,9 +17,10 @@ addDecorator((story, context) => withInfo('common info')(story)(context));
 
 addDecorator(getStory => (
   <ThemeProvider theme={theme}>
-    <React.Fragment>
-      {getStory()} <GlobalStyles />
-    </React.Fragment>
+    <div style={{ padding: '20px' }}>
+      {getStory()}
+      <GlobalStyles />
+    </div>
   </ThemeProvider>
 ));
 
