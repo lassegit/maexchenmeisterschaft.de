@@ -23,12 +23,12 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     -webkit-text-size-adjust: 100%; 
+    font-size: 1rem;
   }
 
   body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1rem;
     line-height: ${({ theme }) => theme.lineHeight.normal};
   }
 
