@@ -29,7 +29,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
-    line-height: ${({ theme }) => theme.lineHeight.normal};
+    line-height: ${({ theme }) => theme.lineHeights.normal};
   }
 
   hr {

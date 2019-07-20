@@ -1,5 +1,5 @@
 const theme = {
-  color: {
+  colors: {
     primary: '#212931',
     secondary: '#738698',
     complementary: '#4B4031',
@@ -10,7 +10,7 @@ const theme = {
     grayLight: '#c8cacc',
     grayLightest: '#f6f6f6',
   },
-  fontSize: {
+  fontSizes: {
     8: '0.5rem',
     9: '0.5625rem',
     10: '0.625rem',
@@ -33,11 +33,11 @@ const theme = {
     38: '2.375rem',
     40: '2.5rem',
   },
-  fontWeight: {
+  fontWeights: {
     regular: 400,
     black: 900,
   },
-  lineHeight: {
+  lineHeights: {
     normal: 1.75,
   },
   breakpoints: ['640px', '832px', '1024px'],

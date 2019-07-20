@@ -18,7 +18,7 @@ const defaultProps = {
 const propTypes = {
   children: PropTypes.oneOfType([PropTypes.node, PropTypes.element]).isRequired,
   textAlign: PropTypes.oneOf(['left', 'right', 'center', 'justify', 'initial', 'inherit']),
-  color: PropTypes.oneOf(Object.keys(theme.color)),
+  color: PropTypes.oneOf(Object.keys(theme.colors)),
   ...styledPropTypes.space,
 };
 

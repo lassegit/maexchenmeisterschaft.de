@@ -6,14 +6,16 @@ import infoAddon, { setDefaults, withInfo } from '@storybook/addon-info';
 import theme from '../src/utils/theme';
 import GlobalStyles from '../src/utils/GlobalStyles';
 
-setDefaults({
-  header: false,
-  inline: true,
-});
-
 setAddon(infoAddon);
 
 addDecorator((story, context) => withInfo('common info')(story)(context));
+
+addDecorator(story =>
+  withInfo('common info')(story)({
+    header: false,
+    inline: true,
+  }),
+);
 
 addDecorator(getStory => (
   <ThemeProvider theme={theme}>

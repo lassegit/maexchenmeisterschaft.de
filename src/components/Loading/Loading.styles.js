@@ -37,7 +37,7 @@ export const LoadingSt = styled.div`
     position: absolute;
     width: 24px;
     height: 24px;
-    border: 4px solid ${({ color, theme }) => theme[color]};
+    border: 4px solid ${({ color, theme }) => theme.colors[color]};
     border-top-color: transparent;
     border-radius: 50%;
   }
