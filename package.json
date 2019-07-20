@@ -6,6 +6,7 @@
   "author": "Lasse T. <lassetange@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@styled-system/prop-types": "^5.0.15",
     "babel-plugin-styled-components": "^1.10.1",
     "gatsby": "^2.9.4",
     "gatsby-image": "^2.1.4",
@@ -21,7 +22,8 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "rebass": "^3.1.1",
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.3.2",
+    "styled-system": "^5.0.15"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^5.1.9",

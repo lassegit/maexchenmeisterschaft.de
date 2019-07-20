@@ -40,6 +40,7 @@ const theme = {
   lineHeight: {
     normal: 1.75,
   },
+  breakpoints: ['640px', '832px', '1024px'],
 };
 
 export default theme;

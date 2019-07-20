@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { space } from 'styled-system';
 
 export const TextAreaSt = styled.textarea`
   width: 100%;
@@ -6,6 +7,7 @@ export const TextAreaSt = styled.textarea`
   background: transparent;
   border: 2px solid ${({ theme }) => theme.color.grayLight};
   line-height: ${({ theme }) => theme.lineHeight.normal};
+  ${space};
 
   &:active,
   &:focus {

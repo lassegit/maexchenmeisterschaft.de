@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { space } from 'styled-system';
 
 export const TextInputSt = styled.input`
   width: 100%;
@@ -7,6 +8,7 @@ export const TextInputSt = styled.input`
   background: transparent;
   border: 2px solid ${({ theme }) => theme.color.grayLight};
   line-height: ${({ theme }) => theme.lineHeight.normal};
+  ${space};
 
   &:active,
   &:focus {

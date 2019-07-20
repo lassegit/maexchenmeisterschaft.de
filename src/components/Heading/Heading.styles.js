@@ -1,10 +1,14 @@
 import styled, { css } from 'styled-components';
+import { space } from 'styled-system';
 
 const base = css`
   font-weight: ${({ theme }) => theme.fontWeight.black};
+  text-align: ${({ textAlign }) => textAlign};
+  color: ${({ color, theme }) => theme.color[color]};
   letter-spacing: 0.075em;
   text-transform: uppercase;
   line-height: normal;
+  ${space};
 `;
 
 export const H1St = styled.h1`

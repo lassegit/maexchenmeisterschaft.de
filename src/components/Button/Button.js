@@ -1,3 +1,4 @@
+import propTypes from '@styled-system/prop-types';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Loading from '../Loading';
@@ -31,6 +32,7 @@ Button.propTypes = {
   variant: PropTypes.oneOf(['primary', 'secondary']),
   isLoading: PropTypes.bool,
   unstyled: PropTypes.bool,
+  ...propTypes.space,
 };
 
 export default Button;

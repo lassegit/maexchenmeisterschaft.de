@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import propTypes from '@styled-system/prop-types';
 import React from 'react';
 import { TextInputSt } from './TextInput.styles';
 
@@ -12,6 +13,7 @@ TextInput.defaultProps = {
 TextInput.propTypes = {
   value: PropTypes.string,
   handleChange: PropTypes.func,
+  ...propTypes.space,
 };
 
 export default TextInput;

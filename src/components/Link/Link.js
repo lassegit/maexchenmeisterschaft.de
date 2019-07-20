@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import propTypes from '@styled-system/prop-types';
 import React from 'react';
 import { LinkSt } from './Link.styles';
 
@@ -12,6 +13,7 @@ Link.propTypes = {
   to: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([PropTypes.node, PropTypes.element]).isRequired,
   unstyled: PropTypes.bool,
+  ...propTypes.space,
 };
 
 export default Link;

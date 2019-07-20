@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { space } from 'styled-system';
 
 export const ButtonSt = styled.button`
   padding: 0 30px;
@@ -9,6 +10,7 @@ export const ButtonSt = styled.button`
   border: 4px solid;
   text-transform: uppercase;
   text-align: center;
+  ${space};
 
   ${({ variant }) =>
     variant === 'primary' &&
