@@ -7,10 +7,10 @@ export const LogoSt = styled(Link)`
   border-style: solid;
   border-color: #ffffff;
   border-width: 5px;
-  color: ${({ theme }) => theme.color.white};
+  color: ${({ theme }) => theme.colors.white};
   text-decoration: none;
-  font-size: ${({ theme }) => theme.fontSize[36]};
-  font-weight: ${({ theme }) => theme.fontWeight.black};
+  font-size: ${({ theme }) => theme.fontSizes[36]};
+  font-weight: ${({ theme }) => theme.fontWeights.black};
   letter-spacing: 0.075em;
   line-height: 1;
   padding: 1rem 1.75rem;

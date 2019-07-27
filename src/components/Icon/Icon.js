@@ -26,7 +26,7 @@ Icon.propTypes = {
   'aria-labelledby': PropTypes.string.isRequired,
   width: PropTypes.string,
   height: PropTypes.string,
-  fill: PropTypes.oneOf(Object.keys(theme.colors)),
+  fill: PropTypes.oneOf([...Object.keys(theme.colors), 'currentColor']),
   fillRule: PropTypes.oneOf(['nonzero', 'evenodd']),
   viewBox: PropTypes.string,
   rotation: PropTypes.string,

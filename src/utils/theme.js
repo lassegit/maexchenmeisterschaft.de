@@ -41,6 +41,7 @@ const theme = {
     normal: 1.75,
   },
   breakpoints: ['640px', '832px', '1024px'],
+  maxWidth: '1040px',
 };
 
 export default theme;

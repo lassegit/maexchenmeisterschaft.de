@@ -7,7 +7,7 @@ export const LinkSt = styled(GatsbyLink)`
     box-shadow 0.2s ease-in-out;
   border-bottom: ${({ unstyled }) => (unstyled ? 'none' : 'dotted 1px')};
   text-decoration: none;
-  color: ${({ theme }) => theme.color.primary};
+  color: ${({ theme }) => theme.colors.primary};
   ${space};
 
   &:hover {

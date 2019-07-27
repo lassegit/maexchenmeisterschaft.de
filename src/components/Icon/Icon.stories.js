@@ -16,5 +16,6 @@ storiesOf('Icon', module).add('default', () => (
     <Icon {...props} rotation="90deg" />
     <Icon {...props} rotation="180deg" />
     <Icon {...props} rotation="270deg" />
+    <Icon {...props} type="github" />
   </div>
 ));

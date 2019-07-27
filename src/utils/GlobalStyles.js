@@ -1,5 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
+import maexchenJPG from '../assets/images/maexchen.jpg';
+import maexchenWEBP from '../assets/images/maexchen.webp';
+
 const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
@@ -30,6 +33,11 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
     line-height: ${({ theme }) => theme.lineHeights.normal};
+    background-color: ${({ theme }) => theme.colors.primary};
+    background-image: url('${maexchenJPG}');
+    background-image: url('${maexchenWEBP}');
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   hr {

@@ -6,7 +6,11 @@ import { ButtonSt, UnstyledButtonSt } from './Button.styles';
 
 const Button = ({ children, onClick, isLoading, variant, unstyled, ...rest }) => {
   if (unstyled) {
-    return <UnstyledButtonSt onClick={onClick}>{children}</UnstyledButtonSt>;
+    return (
+      <UnstyledButtonSt onClick={onClick} {...rest}>
+        {children}
+      </UnstyledButtonSt>
+    );
   }
 
   return (
@@ -22,7 +26,7 @@ Button.defaultProps = {
   type: 'button',
   variant: 'primary',
   isLoading: false,
-  unstyled: false,
+  unstyled: '',
 };
 
 Button.propTypes = {
@@ -31,7 +35,7 @@ Button.propTypes = {
   type: PropTypes.oneOf(['button', 'submit', 'reset']),
   variant: PropTypes.oneOf(['primary', 'secondary']),
   isLoading: PropTypes.bool,
-  unstyled: PropTypes.bool,
+  unstyled: PropTypes.string,
   ...propTypes.space,
 };
 

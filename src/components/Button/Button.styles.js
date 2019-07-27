@@ -44,4 +44,5 @@ export const ButtonSt = styled.button`
 
 export const UnstyledButtonSt = styled.button`
   all: unset;
+  ${space};
 `;
